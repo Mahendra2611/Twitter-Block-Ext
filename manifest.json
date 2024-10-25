@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter Blocker",
+    "version": "1.0",
+    "description": "Blocks Twitter (X) after 5 minutes of usage",
+    "permissions": ["tabs", "storage"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": ["*://*.x.com/*"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
